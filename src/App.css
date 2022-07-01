@@ -1,38 +1,57 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Karla:wght@700&display=swap");
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #f5f7fb;
+  box-sizing: border-box;
+  background-image: url(./images/yellowBlob.png), url(./images/blueBlob.png);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+p {
+  color: #293264;
+}
+
+/* Start Component */
+
+.startComponent {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.startComponent h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-top: 0;
+  font-family: "Karla", sans-serif;
+}
+.startComponent p {
+  font-size: 1.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.startComponent button {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #4d5b9e;
+  color: #f5f7fb;
+  font-family: "Inter", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.startComponent button:active {
+  transform: scale(0.97);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* END OF Start Component */
